@@ -1,0 +1,21 @@
+<loadFolders>
+	<v1.4>
+		<li>1.4</li>
+		<li>Common</li>
+		<li IfModActive="ludeon.rimworld.biotech">Mods/1.4/Biotech</li>
+		<li IfModActive="sarg.alphaanimals">Mods/1.4/AlphaAnimals</li>
+		<li IfModActive="spincrus.dinosauria">Mods/1.4/Dinosauria</li>
+		<li IfModActive="Spino.Megafauna">Mods/1.4/Megafauna</li>
+		<li IfModActive="rimofmadness.CallofCthulhuCosmicHorrors">Mods/1.4/CosmicHorrors</li>
+	</v1.4>
+	<v1.5>
+		<li>1.5</li>
+		<li>Common</li>
+		<!-- <li IfModActive="ludeon.rimworld.biotech">Mods/1.5/Biotech</li> -->
+		<li IfModActive="sarg.alphaanimals">Mods/1.5/AlphaAnimals</li>
+		<li IfModActive="spincrus.dinosauria">Mods/1.5/Dinosauria</li>
+		<li IfModActive="Spino.Megafauna">Mods/1.5/Megafauna</li>
+		<li IfModActive="rimofmadness.CallofCthulhuCosmicHorrors">Mods/1.5/CosmicHorrors</li>
+		<li IfModActive="OskarPotocki.VFE.Insectoid2">Mods/1.5/Insectoids2</li>
+	</v1.5>
+</loadFolders>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>GR_ExtractGenesEquine</defName>
+		<label>extract genes from an equine</label>
+		<description>Extract genetic material from an equine corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<researchPrerequisite>GR_ExtractTier2</researchPrerequisite>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Corpse_Horse</li>
+						<li>Corpse_Donkey</li>
+						<li>Corpse_Dromedary</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Corpse_Horse</li>
+				<li>Corpse_Donkey</li>
+				<li>Corpse_Dromedary</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_EquineGenetic>1</GR_EquineGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GR_ExtractGenesReptiles</defName>
+		<label>extract genes from a reptile</label>
+		<description>Extract genetic material from a reptile corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<researchPrerequisite>GR_ExtractTier2</researchPrerequisite>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Corpse_Iguana</li>
+						<li>Corpse_Cobra</li>
+						<li>Corpse_Tortoise</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Corpse_Iguana</li>
+				<li>Corpse_Cobra</li>
+				<li>Corpse_Tortoise</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_ReptileGenetic>1</GR_ReptileGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GR_ExtractGenesInsectoids</defName>
+		<label>extract genes from an insectoid</label>
+		<description>Extract genetic material from an insectoid corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<researchPrerequisite>GR_ExtractTier2</researchPrerequisite>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Corpse_Megascarab</li>
+						<li>Corpse_Megaspider</li>
+						<li>Corpse_Spelopede</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Corpse_Megascarab</li>
+				<li>Corpse_Megaspider</li>
+				<li>Corpse_Spelopede</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_InsectoidGenetic>1</GR_InsectoidGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GR_ExtractGenesColossals</defName>
+		<label>extract genes from a colossal</label>
+		<description>Extract genetic material from a colossal corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<researchPrerequisite>GR_ExtractTier3</researchPrerequisite>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Corpse_Thrumbo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Corpse_Thrumbo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_ThrumboGenetic>1</GR_ThrumboGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>10</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "InsectJelly"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="InsectJelly"]</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Studiable">
+								<cost>250</cost>
+								<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+								<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+								<completedLetterDef>PositiveEvent</completedLetterDef>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="InsectJelly"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Studiable">
+							<cost>250</cost>
+							<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+							<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+							<completedLetterDef>PositiveEvent</completedLetterDef>
+						</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "GR_ArchotechGenomeExcavator"]/comps</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GR_ArchotechGenomeExcavator"]</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Studiable">
+								<cost>250</cost>
+								<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+								<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+								<completedLetterDef>PositiveEvent</completedLetterDef>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GR_ArchotechGenomeExcavator"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Studiable">
+							<cost>250</cost>
+							<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+							<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+							<completedLetterDef>PositiveEvent</completedLetterDef>
+						</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractTier2"]</xpath>
+				<value>
+					<requiredStudied>
+					  <li>InsectJelly</li>
+					</requiredStudied>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractTier2"]/baseCost</xpath>
+				<value>
+					<baseCost>1500</baseCost>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractTier3"]</xpath>
+				<value>
+					<requiredStudied>
+					  <li>GR_ArchotechGenomeExcavator</li>
+					</requiredStudied>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractTier3"]/baseCost</xpath>
+				<value>
+					<baseCost>2500</baseCost>
+				</value>
+			</li>
+			<li Class="PatchOperationFindMod"> <mods> <li>Dinosauria</li> </mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "TriceratopsHorn"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TriceratopsHorn"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TriceratopsHorn"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "TyrannosaurusRexSkull"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TyrannosaurusRexSkull"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="TyrannosaurusRexSkull"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractDinosauria"]</xpath>
+							<value>
+								<requiredStudied>
+								  <li>TriceratopsHorn</li>
+								  <li>TyrannosaurusRexSkull</li>
+								</requiredStudied>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractDinosauria"]/baseCost</xpath>
+							<value>
+								<baseCost>1500</baseCost>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod"> <mods> <li>Alpha Animals</li> </mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "AA_BlackInsectJelly"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_BlackInsectJelly"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_BlackInsectJelly"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "AA_NightMilk"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_NightMilk"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_NightMilk"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "AA_GallatrossHorn"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>500</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>500</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractTier3"]/requiredStudied</xpath>
+							<value>
+								<li>AA_GallatrossHorn</li>
+							</value>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractAlpha"]</xpath>
+							<value>
+								<requiredStudied>
+								  <li>AA_BlackInsectJelly</li>
+								  <li>AA_NightMilk</li>
+								</requiredStudied>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractAlpha"]/baseCost</xpath>
+							<value>
+								<baseCost>1500</baseCost>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod"> <mods> <li>Megafauna</li> </mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "ElasmotheriumHorn"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElasmotheriumHorn"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ElasmotheriumHorn"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "MegalocerosAntlers"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MegalocerosAntlers"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="MegalocerosAntlers"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractMegafauna"]</xpath>
+							<value>
+								<requiredStudied>
+								  <li>ElasmotheriumHorn</li>
+								  <li>MegalocerosAntlers</li>
+								</requiredStudied>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractMegafauna"]/baseCost</xpath>
+							<value>
+								<baseCost>1500</baseCost>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod"> <mods> <li>Call of Cthulhu - Cosmic Horrors</li> </mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "CH_Leather_MiGo"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CH_Leather_MiGo"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CH_Leather_MiGo"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/ThingDef[defName = "CH_Leather_Chthonian"]/comps</xpath>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CH_Leather_Chthonian"]</xpath>
+								<value>
+									<comps>
+										<li Class="CompProperties_Studiable">
+											<cost>250</cost>
+											<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+											<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+											<completedLetterDef>PositiveEvent</completedLetterDef>
+										</li>
+									</comps>
+								</value>
+							</nomatch>
+							<match Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="CH_Leather_Chthonian"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Studiable">
+										<cost>250</cost>
+										<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+										<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired some insight needed for the research project(s) {RESEARCH}.</completedLetterText>
+										<completedLetterDef>PositiveEvent</completedLetterDef>
+									</li>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractEldritch"]</xpath>
+							<value>
+								<requiredStudied>
+								  <li>CH_Leather_MiGo</li>
+								  <li>CH_Leather_Chthonian</li>
+								</requiredStudied>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName = "GR_ExtractEldritch"]/baseCost</xpath>
+							<value>
+								<baseCost>1500</baseCost>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

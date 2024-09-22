@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Insectoids 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoids"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFEI2_Acidspitter</li>
+						<li>Corpse_VFEI2_Boomtick</li>
+						<li>Corpse_VFEI2_Durapod</li>
+						<li>Corpse_VFEI2_Empress</li>
+						<li>Corpse_VFEI2_Fuelmite</li>
+						<li>Corpse_VFEI2_Gigalocust</li>
+						<li>Corpse_VFEI2_Gigamite</li>
+						<li>Corpse_VFEI2_Hellbeetle</li>
+						<li>Corpse_VFEI2_Ironclad</li>
+						<li>Corpse_VFEI2_Macrofly</li>
+						<li>Corpse_VFEI2_Megapede</li>
+						<li>Corpse_VFEI2_Megathrips</li>
+						<li>Corpse_VFEI2_Megawasp</li>
+						<li>Corpse_VFEI2_Queen</li>
+						<li>Corpse_VFEI2_Silverfish</li>
+						<li>Corpse_VFEI2_Swarmling</li>
+						<li>Corpse_VFEI2_Tankroach</li>
+						<li>Corpse_VFEI2_Teramantis</li>
+						<li>Corpse_VFEI2_Titantick</li>
+						<li>Corpse_VFEI2_Venomite</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoids"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VFEI2_Acidspitter</li>
+						<li>Corpse_VFEI2_Boomtick</li>
+						<li>Corpse_VFEI2_Durapod</li>
+						<li>Corpse_VFEI2_Empress</li>
+						<li>Corpse_VFEI2_Fuelmite</li>
+						<li>Corpse_VFEI2_Gigalocust</li>
+						<li>Corpse_VFEI2_Gigamite</li>
+						<li>Corpse_VFEI2_Hellbeetle</li>
+						<li>Corpse_VFEI2_Ironclad</li>
+						<li>Corpse_VFEI2_Macrofly</li>
+						<li>Corpse_VFEI2_Megapede</li>
+						<li>Corpse_VFEI2_Megathrips</li>
+						<li>Corpse_VFEI2_Megawasp</li>
+						<li>Corpse_VFEI2_Queen</li>
+						<li>Corpse_VFEI2_Silverfish</li>
+						<li>Corpse_VFEI2_Swarmling</li>
+						<li>Corpse_VFEI2_Tankroach</li>
+						<li>Corpse_VFEI2_Teramantis</li>
+						<li>Corpse_VFEI2_Titantick</li>
+						<li>Corpse_VFEI2_Venomite</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

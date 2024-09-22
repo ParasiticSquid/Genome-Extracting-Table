@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesColossals"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_Gallatross</li>
+						<li>Corpse_AA_GallatrossMoribund</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesColossals"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_Gallatross</li>
+						<li>Corpse_AA_GallatrossMoribund</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptiles"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_Lockjaw</li>
+						<li>Corpse_AA_DecayDrake</li>
+						<li>Corpse_AA_RoughPlatedMonitor</li>
+						<li>Corpse_AA_RayHound</li>
+						<li>Corpse_AA_CrescendoAnole</li>
+						<li>Corpse_AA_Erin</li>
+						<li>Corpse_AA_PedigreedRaptor</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptiles"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_Lockjaw</li>
+						<li>Corpse_AA_DecayDrake</li>
+						<li>Corpse_AA_RoughPlatedMonitor</li>
+						<li>Corpse_AA_RayHound</li>
+						<li>Corpse_AA_CrescendoAnole</li>
+						<li>Corpse_AA_Erin</li>
+						<li>Corpse_AA_PedigreedRaptor</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoids"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_BlackScarab</li>
+						<li>Corpse_AA_BlackSpelopede</li>
+						<li>Corpse_AA_BlackSpider</li>
+						<li>Corpse_AA_Barbslinger</li>
+						<li>Corpse_AA_BedBug</li>
+						<li>Corpse_AA_Blizzarisk</li>
+						<li>Corpse_AA_BlizzariskClutchMother</li>
+						<li>Corpse_AA_Bumbledrone</li>
+						<li>Corpse_AA_BumbledroneQueen</li>
+						<li>Corpse_AA_Junglelisk</li>
+						<li>Corpse_AA_Dunealisk</li>
+						<li>Corpse_AA_DunealiskClutchMother</li>
+						<li>Corpse_AA_Feralisk</li>
+						<li>Corpse_AA_FeraliskClutchMother</li>
+						<li>Corpse_AA_Frostmite</li>
+						<li>Corpse_AA_IronhuskBeetle</li>
+						<li>Corpse_AA_MammothWorm</li>
+						<li>Corpse_AA_MegaLouse</li>
+						<li>Corpse_AA_CrepuscularBeetle</li>
+						<li>Corpse_AA_FrostboundBehemoth</li>
+						<li>Corpse_AA_Cinderlisk</li>
+						<li>Corpse_AA_BumbledroneHierophant</li>
+						<li>Corpse_AA_FireWasp</li>
+						<li>Corpse_AA_AngelMoth</li>
+						<li>Corpse_AA_ChemfuelMyrmidon</li>
+						<li>Corpse_AA_LuciferBug</li>
+						<li>Corpse_AA_Animalisk</li>
+						<li>Corpse_AA_DrainerLarva</li>
+						<li>Corpse_AA_Drainer</li>
+						<li>Corpse_AA_AuroraSylph</li>
+						<li>Corpse_AA_EmpressButterflyLarva</li>
+						<li>Corpse_AA_EmpressButterfly</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoids"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_BlackScarab</li>
+						<li>Corpse_AA_BlackSpelopede</li>
+						<li>Corpse_AA_BlackSpider</li>
+						<li>Corpse_AA_Barbslinger</li>
+						<li>Corpse_AA_BedBug</li>
+						<li>Corpse_AA_Blizzarisk</li>
+						<li>Corpse_AA_BlizzariskClutchMother</li>
+						<li>Corpse_AA_Bumbledrone</li>
+						<li>Corpse_AA_BumbledroneQueen</li>
+						<li>Corpse_AA_Junglelisk</li>
+						<li>Corpse_AA_Dunealisk</li>
+						<li>Corpse_AA_DunealiskClutchMother</li>
+						<li>Corpse_AA_Feralisk</li>
+						<li>Corpse_AA_FeraliskClutchMother</li>
+						<li>Corpse_AA_Frostmite</li>
+						<li>Corpse_AA_IronhuskBeetle</li>
+						<li>Corpse_AA_MammothWorm</li>
+						<li>Corpse_AA_MegaLouse</li>
+						<li>Corpse_AA_CrepuscularBeetle</li>
+						<li>Corpse_AA_FrostboundBehemoth</li>
+						<li>Corpse_AA_Cinderlisk</li>
+						<li>Corpse_AA_BumbledroneHierophant</li>
+						<li>Corpse_AA_FireWasp</li>
+						<li>Corpse_AA_AngelMoth</li>
+						<li>Corpse_AA_ChemfuelMyrmidon</li>
+						<li>Corpse_AA_LuciferBug</li>
+						<li>Corpse_AA_Animalisk</li>
+						<li>Corpse_AA_DrainerLarva</li>
+						<li>Corpse_AA_Drainer</li>
+						<li>Corpse_AA_AuroraSylph</li>
+						<li>Corpse_AA_EmpressButterflyLarva</li>
+						<li>Corpse_AA_EmpressButterfly</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

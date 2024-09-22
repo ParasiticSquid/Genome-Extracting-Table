@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>GR_ExtractTier2</defName>
+		<label>genome extraction tier 2</label>
+		<tab>GR_GeneticReseach</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Unlocks the extraction of tier 2 genomes at the Genome Extracting Table.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>GR_GeneticDuplication</li>
+			<li>GR_GeneticEngineering</li>
+			<li>GR_GeneticAlteration</li>
+		</prerequisites>
+
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>GR_ExtractTier3</defName>
+		<label>genome extraction tier 3</label>
+		<tab>GR_GeneticReseach</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Unlocks the extraction of tier 3 genomes at the Genome Extracting Table.</description>
+		<baseCost>5000</baseCost>
+		<prerequisites>
+			<li>GR_HybridImplantology</li>
+			<li>GR_GeneticCompatibility</li>
+			<li>GR_GeneticMechahybridization</li>
+			<li>GR_ExtractTier2</li>
+		</prerequisites>
+
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

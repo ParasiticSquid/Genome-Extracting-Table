@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>GR_ExtractEldritch</defName>
+		<label>eldritch genome extraction</label>
+		<tab>GR_GeneticReseach</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Unlocks the extraction of eldritch genomes at the Genome Extracting Table.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>GR_ExtractTier2</li>
+		</prerequisites>
+
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+</Defs>
